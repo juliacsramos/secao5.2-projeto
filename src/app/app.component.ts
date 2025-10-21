@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'secao5.2-projeto';
+  buttonClicked() {
+    console.log('Button was clicked!');
+  }
 }
