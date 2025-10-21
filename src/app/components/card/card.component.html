@@ -1,0 +1,14 @@
+<div class="card" [class]="{
+    'card--purple': cardStyle === 'purple' ? true : false,
+    'card--orange': cardStyle === 'orange' ? true : false
+    }"
+>
+    <div class="card__plan card__item">Plano <b>{{planType}}</b></div>
+    <div class="card__price card__item">R${{planPrice}},00/mês</div>
+
+    <app-button 
+    [text]="'Adquirir'" 
+    [style]="cardStyle === 'orange' ? 'white' : 'purple'"
+    (clicked)="onButtonClicked()"
+    ></app-button> <!-- isso significa que se o cardStyle for laranja, ele vai devolver o button branco, caso contrário, vai devolver o roxo-->
+</div>
